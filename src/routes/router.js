@@ -13,28 +13,28 @@ const {
 
 
 // Listando todas las mascotas
-router.get('/pets', listAllMascotas);
+router.get('/', listAllMascotas);
 
 // Buscando por el ID
-router.get('/pets/id/:id', getById);
+router.get('/id/:id', getById);
 
 // Buscando por el nombre
-router.get('/pets/name/:name', getByName);
+router.get('/name/:name', getByName);
 
 // Registrando
-router.post('/pets', createMascota);
+router.post('/', createMascota);
 
 // Actualizando datos de la mascota por ID
-router.put('/pets/id/:id', updateById);
+router.put('/id/:id', updateById);
 
 // Actualizando datos de la mascota por nombre
-router.put('/pets/name/:name', updateByName);
+router.put('/name/:name', updateByName);
 
 // Eliminando una mascota...
-router.delete('/pets/id/:id', deleteById);
+router.delete('/id/:id', deleteById);
 
 // Eliminando una mascota con su nombre...
-router.delete('/pets/name/:name', deleteByName);
+router.delete('/name/:name', deleteByName);
 
 
 

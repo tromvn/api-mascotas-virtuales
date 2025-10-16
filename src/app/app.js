@@ -7,6 +7,6 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.json());
 
-app.use('/', router);
+app.use('/pets', router);
 
 module.exports = app
